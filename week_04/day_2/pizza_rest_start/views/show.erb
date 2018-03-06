@@ -1,0 +1,19 @@
+<p>Show pizza order</p>
+
+<p>First name: <%= @order.first_name() %></p>
+<p>Last name: <%= @order.last_name() %></p>
+<p>Topping: <%= @order.topping() %></p>
+<p>Quantity: <%= @order.quantity() %></p>
+
+<form method="post" action="/pizza-orders/<%= @order.id %>/delete">
+  <input type="submit" value="Delete Order" />
+</form>
+
+
+<a href="/pizza-orders/<%= @order.id %>/edit">Edit Order</a>
+<!-- <form method="get" action="/pizza-orders/<%= @order.id %>/edit">
+  <input type="submit" value="Edit Order" />
+</form> -->
+
+
+<!-- Only use forms for posts, use anchor(hyperlink) to do a get -->

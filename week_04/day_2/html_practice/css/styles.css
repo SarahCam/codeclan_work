@@ -1,0 +1,43 @@
+body {
+  color: red;
+}
+
+p {
+  color: rebeccapurple;
+}
+
+#first {
+  background: darkolivegreen;
+}
+
+article {
+  background: green;
+  width: 50vw;
+  margin: 1em;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+article a {
+
+}
+
+nav a, nav a:link, nav a:visited {
+  text-decoration: none;
+  font-size: 18px;
+
+}
+nav a:hover, nav a:active, nav a:focus {
+  text-decoration: underline;
+
+}
+
+h1 {
+  background: hotpink;
+  color: white;
+  padding: 20px 10px 0px 50px;
+  border: 5px solid black;
+  margin: 40px;
+}
