@@ -35,6 +35,30 @@ class PiggyBank extends React.Component{
     })
   }
 
+  componentWillMount(){
+    console.log("Component WILL mount!");
+    const button = document.querySelector("button");
+    console.log(button);
+  }
+
+  componentDidMount(){
+    console.log("Component DID mount!");
+    const button = document.querySelector("button");
+    console.log(button);
+  }
+
+  componentWillUpdate(nextProps, nextState){
+    console.log("Component will update!");
+    console.log(nextProps);
+    console.log(nextState);
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    console.log("Component did update!");
+    console.log(prevProps);
+    console.log(prevState);
+  }
+
   render(){
     return(
       <div className="bank-box">
